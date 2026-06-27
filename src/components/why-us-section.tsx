@@ -124,7 +124,7 @@ export function WhyUsSection() {
               <img
                 src="/suman-bhagat.png"
                 alt={EDUCATOR.name}
-                className="h-16 w-16 rounded-full object-cover border border-primary/20 shadow-sm shrink-0 bg-secondary"
+                className="h-16 w-16 rounded-full object-cover border border-primary/20 shadow-sm shrink-0"
               />
               <div>
                 <blockquote className="text-lg sm:text-xl leading-relaxed text-foreground font-normal italic mb-4">

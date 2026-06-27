@@ -47,7 +47,7 @@ export default function ContactPage() {
             <img
               src="/suman-bhagat.png"
               alt="Suman Bhagat"
-              className="h-12 w-12 rounded-full object-cover border border-primary/30 bg-secondary"
+              className="h-12 w-12 rounded-full object-cover border border-primary/30"
             />
             <div className="text-left">
               <p className="text-sm font-bold text-foreground">Suman Bhagat</p>

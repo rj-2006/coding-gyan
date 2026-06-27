@@ -34,7 +34,7 @@ export default function AboutPage() {
               <img
                 src="/suman-bhagat.png"
                 alt={EDUCATOR.name}
-                className="h-28 w-28 sm:h-36 sm:w-36 rounded-full object-cover border-2 border-primary/30 shadow-md shrink-0 bg-secondary"
+                className="h-28 w-28 sm:h-36 sm:w-36 rounded-full object-cover border-2 border-primary/30 shadow-md shrink-0"
               />
               <div className="space-y-4 text-center md:text-left">
                 <div>

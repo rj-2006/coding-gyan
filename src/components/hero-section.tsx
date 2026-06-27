@@ -107,7 +107,7 @@ export function HeroSection() {
                 <img
                   src="/suman-bhagat.png"
                   alt={EDUCATOR.name}
-                  className="h-12 w-12 rounded-full object-cover border border-border shadow-sm shrink-0 bg-secondary"
+                  className="h-12 w-12 rounded-full object-cover border border-border shadow-sm shrink-0"
                 />
                 <div>
                   <p className="text-base font-semibold text-foreground">{EDUCATOR.name}</p>
