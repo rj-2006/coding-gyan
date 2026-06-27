@@ -119,19 +119,21 @@ export function WhyUsSection() {
 
         {/* ROW 3: Full-width Educator Quote */}
         <FadeIn delay={0.3}>
-          <div className="lg-card-strong rounded-2xl p-8 sm:p-10">
-            <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8">
+          <div className="lg-card-strong rounded-3xl p-8 sm:p-10 border border-primary/20 shadow-xl ambient-glow relative overflow-hidden">
+            <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 relative z-10">
               <img
-                src="/suman-bhagat.png"
+                src="/instructor.png"
                 alt={EDUCATOR.name}
-                className="h-16 w-16 rounded-full object-cover border border-primary/20 shadow-sm shrink-0"
+                className="h-20 w-20 rounded-full object-cover border-2 border-primary/40 shadow-lg shrink-0"
               />
               <div>
                 <blockquote className="text-lg sm:text-xl leading-relaxed text-foreground font-normal italic mb-4">
                   &ldquo;{EDUCATOR.philosophy}&rdquo;
                 </blockquote>
-                <p className="text-base font-semibold text-foreground">
-                  {EDUCATOR.name} <span className="text-sm font-normal text-muted-foreground">· {EDUCATOR.role}, {EDUCATOR.institution}</span>
+                <p className="text-base font-bold text-foreground flex items-center gap-2">
+                  {EDUCATOR.name}
+                  <span className="inline-flex items-center justify-center h-4 w-4 rounded-full bg-blue-500/10 text-blue-500 text-[10px]">✓</span>
+                  <span className="text-sm font-normal text-muted-foreground">· {EDUCATOR.role}, {EDUCATOR.institution}</span>
                 </p>
               </div>
             </div>

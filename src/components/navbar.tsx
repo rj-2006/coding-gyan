@@ -94,19 +94,19 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background/95 backdrop-blur-xl overflow-hidden border-t border-border shadow-2xl"
+            className="md:hidden bg-background overflow-hidden border-t border-border shadow-2xl opacity-100"
           >
-            <div className="section-container py-4 space-y-1">
+            <div className="section-container py-4 space-y-1.5">
               {LINKS.map((l) => (
                 <Link key={l.label} href={l.href} onClick={() => setOpen(false)}
-                  className={cn("block py-2 text-sm transition-colors", pathname === l.href ? "text-foreground font-medium" : "text-muted-foreground")}
+                  className={cn("block py-2.5 px-3 rounded-lg text-sm transition-all duration-200", pathname === l.href ? "bg-primary/10 text-primary font-semibold pl-4" : "text-muted-foreground hover:bg-secondary/50 hover:text-foreground hover:pl-4")}
                 >
                   {l.label}
                 </Link>
               ))}
               <div className="pt-3 border-t border-border mt-2">
                 <Link href="/contact" onClick={() => setOpen(false)}
-                  className="block text-center lg-card text-sm font-medium px-4 py-2 rounded-full"
+                  className="block text-center lg-card text-sm font-semibold px-4 py-2.5 rounded-full hover:border-primary/50 transition-all shadow-sm active:scale-98"
                 >
                   Book Demo Class
                 </Link>

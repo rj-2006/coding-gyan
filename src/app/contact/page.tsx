@@ -43,15 +43,18 @@ export default function ContactPage() {
             Have questions or want to book a free demo class? Connect directly with our faculty team.
           </p>
 
-          <div className="inline-flex items-center gap-4 p-3 pr-6 rounded-full lg-card border border-border shadow-sm">
+          <div className="inline-flex items-center gap-4 p-3.5 pr-7 rounded-full lg-card border border-border shadow-md hover:border-primary/40 transition-all duration-300 group">
             <img
-              src="/suman-bhagat.png"
+              src="/instructor.png"
               alt="Suman Bhagat"
-              className="h-12 w-12 rounded-full object-cover border border-primary/30"
+              className="h-14 w-14 rounded-full object-cover border-2 border-primary/40 shadow-sm group-hover:scale-105 transition-transform"
             />
             <div className="text-left">
-              <p className="text-sm font-bold text-foreground">Suman Bhagat</p>
-              <p className="text-xs text-muted-foreground">Assistant Professor · St. Xavier&apos;s College</p>
+              <p className="text-sm font-bold text-foreground flex items-center gap-1.5">
+                Suman Bhagat
+                <span className="inline-flex items-center justify-center h-4 w-4 rounded-full bg-blue-500/10 text-blue-500 text-[10px]">✓</span>
+              </p>
+              <p className="text-xs text-muted-foreground font-medium">Assistant Professor · St. Xavier&apos;s College</p>
             </div>
           </div>
         </div>
@@ -63,42 +66,42 @@ export default function ContactPage() {
               href="https://wa.me/919508387397"
               target="_blank"
               rel="noopener noreferrer"
-              className="lg-card rounded-2xl p-6 ambient-glow group flex flex-col items-center text-center"
+              className="lg-card rounded-2xl p-6 ambient-glow group flex flex-col items-center text-center hover:-translate-y-1.5 hover:shadow-xl hover:border-emerald-500/30 transition-all duration-300"
             >
-              <div className="h-14 w-14 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <div className="h-14 w-14 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-emerald-500/20 transition-all">
                 <MessageSquare className="h-6 w-6" />
               </div>
               <h3 className="font-bold text-lg mb-1 text-foreground">WhatsApp</h3>
               <p className="text-sm text-muted-foreground mb-4">Fastest response time</p>
-              <span className="text-sm font-semibold text-emerald-500 hover:underline mt-auto">Chat Now &rarr;</span>
+              <span className="text-sm font-semibold text-emerald-500 hover:underline mt-auto flex items-center gap-1">Chat Now &rarr;</span>
             </a>
 
             <a
               href="tel:+919508387397"
-              className="lg-card rounded-2xl p-6 ambient-glow group flex flex-col items-center text-center"
+              className="lg-card rounded-2xl p-6 ambient-glow group flex flex-col items-center text-center hover:-translate-y-1.5 hover:shadow-xl hover:border-blue-500/30 transition-all duration-300"
             >
-              <div className="h-14 w-14 rounded-full bg-blue-500/10 text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <div className="h-14 w-14 rounded-full bg-blue-500/10 text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-blue-500/20 transition-all">
                 <Phone className="h-6 w-6" />
               </div>
               <h3 className="font-bold text-lg mb-1 text-foreground">Phone Call</h3>
               <p className="text-sm text-muted-foreground mb-4">{CONTACT_INFO.whatsapp}</p>
-              <span className="text-sm font-semibold text-blue-500 hover:underline mt-auto">Call Now &rarr;</span>
+              <span className="text-sm font-semibold text-blue-500 hover:underline mt-auto flex items-center gap-1">Call Now &rarr;</span>
             </a>
 
             <a
               href={`mailto:${CONTACT_INFO.email}`}
-              className="lg-card rounded-2xl p-6 ambient-glow group flex flex-col items-center text-center"
+              className="lg-card rounded-2xl p-6 ambient-glow group flex flex-col items-center text-center hover:-translate-y-1.5 hover:shadow-xl hover:border-amber-500/30 transition-all duration-300"
             >
-              <div className="h-14 w-14 rounded-full bg-amber-500/10 text-amber-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <div className="h-14 w-14 rounded-full bg-amber-500/10 text-amber-500 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-amber-500/20 transition-all">
                 <Mail className="h-6 w-6" />
               </div>
               <h3 className="font-bold text-lg mb-1 text-foreground">Email Us</h3>
               <p className="text-sm text-muted-foreground mb-4 truncate max-w-[200px]">{CONTACT_INFO.email}</p>
-              <span className="text-sm font-semibold text-amber-500 hover:underline mt-auto">Send Email &rarr;</span>
+              <span className="text-sm font-semibold text-amber-500 hover:underline mt-auto flex items-center gap-1">Send Email &rarr;</span>
             </a>
 
-            <div className="lg-card rounded-2xl p-6 ambient-glow flex flex-col items-center text-center">
-              <div className="h-14 w-14 rounded-full bg-purple-500/10 text-purple-500 flex items-center justify-center mb-4">
+            <div className="lg-card rounded-2xl p-6 ambient-glow flex flex-col items-center text-center hover:-translate-y-1.5 hover:shadow-xl hover:border-purple-500/30 transition-all duration-300 group">
+              <div className="h-14 w-14 rounded-full bg-purple-500/10 text-purple-500 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-purple-500/20 transition-all">
                 <MapPin className="h-6 w-6" />
               </div>
               <h3 className="font-bold text-lg mb-1 text-foreground">Location</h3>
@@ -176,7 +179,7 @@ export default function ContactPage() {
                   e.preventDefault();
                   alert("To book your free demo class, chat with us directly on WhatsApp or call our support line!");
                 }}
-                className="px-8 py-4 rounded-xl bg-foreground text-background font-bold text-sm shadow-md transition-opacity hover:opacity-90"
+                className="px-8 py-4 rounded-xl bg-foreground text-background font-bold text-sm shadow-md transition-all duration-200 hover:opacity-95 hover:shadow-xl active:scale-98"
               >
                 Book Free Demo Class
               </a>
@@ -184,7 +187,7 @@ export default function ContactPage() {
                 href="https://wa.me/919508387397"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 rounded-xl lg-card border-2 border-emerald-500 text-emerald-500 font-bold text-sm flex items-center gap-2 transition-all hover:bg-emerald-500/10"
+                className="px-8 py-4 rounded-xl lg-card border-2 border-emerald-500 text-emerald-500 font-bold text-sm flex items-center gap-2 transition-all duration-200 hover:bg-emerald-500/10 hover:shadow-lg active:scale-98"
               >
                 <MessageSquare className="h-5 w-5" />
                 Chat on WhatsApp

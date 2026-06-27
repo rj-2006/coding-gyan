@@ -29,16 +29,19 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="lg-card-strong rounded-3xl p-8 sm:p-12 mb-20">
+          <div className="lg-card-strong rounded-3xl p-8 sm:p-12 mb-20 border border-primary/20 shadow-2xl ambient-glow">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <img
-                src="/suman-bhagat.png"
+                src="/instructor.png"
                 alt={EDUCATOR.name}
-                className="h-28 w-28 sm:h-36 sm:w-36 rounded-full object-cover border-2 border-primary/30 shadow-md shrink-0"
+                className="h-28 w-28 sm:h-36 sm:w-36 rounded-full object-cover border-4 border-primary/30 shadow-xl shrink-0"
               />
               <div className="space-y-4 text-center md:text-left">
                 <div>
-                  <h2 className="text-2xl font-bold">{EDUCATOR.name}</h2>
+                  <h2 className="text-2xl font-bold flex items-center justify-center md:justify-start gap-2">
+                    {EDUCATOR.name}
+                    <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-blue-500/10 text-blue-500 text-xs">✓</span>
+                  </h2>
                   <p className="text-sm font-medium text-primary mt-0.5">
                     {EDUCATOR.role} · {EDUCATOR.department}
                   </p>

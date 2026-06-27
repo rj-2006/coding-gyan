@@ -103,15 +103,18 @@ export function HeroSection() {
             </FadeIn>
 
             <FadeIn delay={0.45}>
-              <div className="pt-2 flex items-center gap-4">
+              <div className="pt-2 flex items-center gap-4 p-2.5 pr-6 rounded-full lg-card border border-border/80 w-fit shadow-sm hover:border-primary/40 transition-colors">
                 <img
-                  src="/suman-bhagat.png"
+                  src="/instructor.png"
                   alt={EDUCATOR.name}
-                  className="h-12 w-12 rounded-full object-cover border border-border shadow-sm shrink-0"
+                  className="h-12 w-12 rounded-full object-cover border-2 border-primary/40 shadow-sm shrink-0"
                 />
                 <div>
-                  <p className="text-base font-semibold text-foreground">{EDUCATOR.name}</p>
-                  <p className="text-sm text-muted-foreground">{EDUCATOR.role}, {EDUCATOR.institution}</p>
+                  <p className="text-base font-bold text-foreground flex items-center gap-1.5">
+                    {EDUCATOR.name}
+                    <span className="inline-flex items-center justify-center h-4 w-4 rounded-full bg-blue-500/10 text-blue-500 text-[10px]">✓</span>
+                  </p>
+                  <p className="text-xs font-medium text-muted-foreground">{EDUCATOR.role}, {EDUCATOR.institution}</p>
                 </div>
               </div>
             </FadeIn>
@@ -120,19 +123,21 @@ export function HeroSection() {
               <div className="pt-4 flex flex-wrap items-center gap-4">
                 <motion.a
                   href="/courses"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-foreground text-background font-semibold text-sm transition-opacity hover:opacity-90 shadow-sm"
+                  whileHover={{ scale: 1.03, y: -1 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-foreground text-background font-bold text-sm transition-all shadow-md hover:shadow-xl hover:opacity-95"
                   id="hero-cta"
                 >
                   Explore Programs <ArrowRight className="h-4 w-4" />
                 </motion.a>
-                <a
+                <motion.a
                   href="/contact"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl lg-card font-medium text-sm hover:border-foreground/30 transition-colors"
+                  whileHover={{ scale: 1.03, y: -1 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl lg-card font-semibold text-sm hover:border-primary/50 transition-all shadow-sm hover:shadow-md"
                 >
                   Book Demo Class
-                </a>
+                </motion.a>
               </div>
             </FadeIn>
           </div>
