@@ -32,7 +32,7 @@ export function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className={cn("fixed top-0 inset-x-0 z-50 transition-all duration-500", scrolled && "lg-nav")}
+      className={cn("fixed top-0 inset-x-0 z-50 transition-all duration-300 lg-nav")}
     >
       <nav className="section-container flex h-14 items-center justify-between" aria-label="Main">
         <Link href="/" className="flex items-center gap-2.5 group" id="nav-logo">
@@ -94,7 +94,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden lg-card-strong overflow-hidden border-t border-border"
+            className="md:hidden bg-background/95 backdrop-blur-xl overflow-hidden border-t border-border shadow-2xl"
           >
             <div className="section-container py-4 space-y-1">
               {LINKS.map((l) => (

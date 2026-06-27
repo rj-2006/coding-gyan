@@ -31,9 +31,11 @@ export default function AboutPage() {
 
           <div className="lg-card-strong rounded-3xl p-8 sm:p-12 mb-20">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="h-24 w-24 sm:h-32 sm:w-32 rounded-full bg-primary/10 border-2 border-primary/30 flex items-center justify-center text-primary text-3xl font-extrabold shrink-0 shadow-inner">
-                SB
-              </div>
+              <img
+                src="/suman-bhagat.png"
+                alt={EDUCATOR.name}
+                className="h-28 w-28 sm:h-36 sm:w-36 rounded-full object-cover border-2 border-primary/30 shadow-md shrink-0 bg-secondary"
+              />
               <div className="space-y-4 text-center md:text-left">
                 <div>
                   <h2 className="text-2xl font-bold">{EDUCATOR.name}</h2>

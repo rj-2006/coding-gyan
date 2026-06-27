@@ -39,9 +39,21 @@ export default function ContactPage() {
           <h1 className="text-display text-4xl sm:text-5xl font-bold mb-4">
             Get in <span className="gradient-text">Touch</span>
           </h1>
-          <p className="text-muted-foreground max-w-lg mx-auto text-base sm:text-lg">
+          <p className="text-muted-foreground max-w-lg mx-auto text-base sm:text-lg mb-8">
             Have questions or want to book a free demo class? Connect directly with our faculty team.
           </p>
+
+          <div className="inline-flex items-center gap-4 p-3 pr-6 rounded-full lg-card border border-border shadow-sm">
+            <img
+              src="/suman-bhagat.png"
+              alt="Suman Bhagat"
+              className="h-12 w-12 rounded-full object-cover border border-primary/30 bg-secondary"
+            />
+            <div className="text-left">
+              <p className="text-sm font-bold text-foreground">Suman Bhagat</p>
+              <p className="text-xs text-muted-foreground">Assistant Professor · St. Xavier&apos;s College</p>
+            </div>
+          </div>
         </div>
 
         {/* Contact Channels Grid */}

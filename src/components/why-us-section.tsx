@@ -121,9 +121,11 @@ export function WhyUsSection() {
         <FadeIn delay={0.3}>
           <div className="lg-card-strong rounded-2xl p-8 sm:p-10">
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8">
-              <div className="h-16 w-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary text-xl font-bold shrink-0 shadow-xs">
-                SB
-              </div>
+              <img
+                src="/suman-bhagat.png"
+                alt={EDUCATOR.name}
+                className="h-16 w-16 rounded-full object-cover border border-primary/20 shadow-sm shrink-0 bg-secondary"
+              />
               <div>
                 <blockquote className="text-lg sm:text-xl leading-relaxed text-foreground font-normal italic mb-4">
                   &ldquo;{EDUCATOR.philosophy}&rdquo;

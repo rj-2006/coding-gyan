@@ -104,9 +104,11 @@ export function HeroSection() {
 
             <FadeIn delay={0.45}>
               <div className="pt-2 flex items-center gap-4">
-                <div className="h-12 w-12 rounded-full bg-secondary border border-border flex items-center justify-center text-foreground font-bold text-sm shrink-0 shadow-sm">
-                  SB
-                </div>
+                <img
+                  src="/suman-bhagat.png"
+                  alt={EDUCATOR.name}
+                  className="h-12 w-12 rounded-full object-cover border border-border shadow-sm shrink-0 bg-secondary"
+                />
                 <div>
                   <p className="text-base font-semibold text-foreground">{EDUCATOR.name}</p>
                   <p className="text-sm text-muted-foreground">{EDUCATOR.role}, {EDUCATOR.institution}</p>
