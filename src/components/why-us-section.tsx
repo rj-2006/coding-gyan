@@ -88,12 +88,12 @@ export function WhyUsSection() {
           </FadeIn>
         </div>
 
-        {/* ROW 2: 4 Feature cards in a compact horizontal bento row */}
+        {/* ROW 2: 6 Feature cards arranged in a clean 2x3 grid */}
         <div>
           <p className="text-xs font-mono font-semibold tracking-widest uppercase text-muted-foreground mb-6 text-center">
             Our Core Methodology
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {FEATURES.map((f, i) => {
               const Icon = f.icon;
               return (
